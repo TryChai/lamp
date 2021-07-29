@@ -12308,10 +12308,10 @@
     "particles.js" "^2.0.0"
     "vue" "^2.2.6"
 
-"vue-router@^3.0.7":
-  "integrity" "sha512-utJ+QR3YlIC/6x6xq17UMXeAfxEvXA0VKD3PiSio7hBOZNusA1jXcbxZxVEfJunLp48oonjTepY8ORoIlRx/EQ=="
-  "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-3.0.7.tgz"
-  "version" "3.0.7"
+"vue-router@^3.5.2":
+  "integrity" "sha512-807gn82hTnjCYGrnF3eNmIw/dk7/GE4B5h69BlyCK9KHASwSloD1Sjcn06zg9fVG4fYH2DrsNBZkpLtb25WtaQ=="
+  "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-3.5.2.tgz"
+  "version" "3.5.2"
 
 "vue-seamless-scroll@^1.1.17":
   "integrity" "sha1-CORbFV9GdzAwnqSpiT4F59aCqxc="

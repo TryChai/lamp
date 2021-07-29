@@ -218,6 +218,12 @@ Vue.use(wxshare);
 
 
 router.beforeEach((to, from, next) => {
+  // if(to.path == '/'){
+  //   next({path:'/page/buddhistlamp'})
+  // }else{
+  //   next()
+  // }
+  // return 
   // console.log(to)
   fnc.appJumpAction();
   var username = Cookies.get("user_username")

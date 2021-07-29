@@ -3,9 +3,9 @@
         <div class="title">供灯祈福</div>
         <div class="relative">
             <div class="music" @click.stop="pause"><img src="../../assets/img/buddhistlamp/music.png" alt=""></div>
-            <audio id="audio1" autoplay="autoplay">
+            <!-- <audio id="audio1" autoplay="autoplay">
                 <source :src="link" type="audio/mp3" />
-            </audio>
+            </audio> -->
             <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white" style="max-height: 354px;">
                 <van-swipe-item v-for="(item,index) in banner" :key="index">
                     <img v-lazy="item.piclink" />
@@ -35,39 +35,40 @@ export default {
     return {
      banner:[],
      content:'',
-     link:''
+     link:'',
+     audio:null,
+     num:0
     };
   },
   mounted(){
    this.getBanner()
    this.getArtical()
-   document.addEventListener('touchstart', function() {
-        document.getElementById('audio1') && document.getElementById('audio1').play()
-      })
   },
   methods: {
    pause(){
-    document.getElementById('audio1') && document.getElementById('audio1').pause()
+       if(this.num %2 == 0){
+            this.audio && this.audio.pause()
+       }else{
+        this.audio && this.audio.play()
+       }
+       this.num++
+   
    },
    async getArtical(){
         this.$toast.loading({
             mask: true,
             message: '加载中...'
         });
-        log(this.$route.params)
         let temple_id = this.$route.params.temple_id
         let article_id = this.$route.params.article_id
         let res = await this.$api.lamp.getArtical({article_id:article_id,id:temple_id})
         if(res.code == 200){
             this.content = res.result.content
-            this.link = res.result.link
-            document.getElementById('audio1').play()
-            var src = "./rank.mp3";
             // 初始化Aduio
-            var audio = new Audio();
+            this.audio = new Audio();
             var playPromise;
-            audio.src = src;
-            playPromise = audio.play();
+            this.audio.src = res.result.link;
+            playPromise = this.audio.play();
             if (playPromise) {
                 playPromise.then(() => {
                     // 音频加载成功
@@ -75,7 +76,7 @@ export default {
                     setTimeout(() => {
                         // 后续操作
                         console.log("done.");
-                    }, audio.duration * 1000); // audio.duration 为音频的时长单位为秒
+                    }, this.audio.duration * 1000); // audio.duration 为音频的时长单位为秒
 
 
                 }).catch((e) => {
@@ -83,7 +84,6 @@ export default {
                 });
 
         }
-        console.log(res)
     }
    },
    async getBanner(){
@@ -93,6 +93,7 @@ export default {
        }
     },
     gd(){
+        this.audio.pause()
         this.$store.commit('setLamp',{lamppay:{},location:{}})
         this.$router.push({name:'lamppay'})
     }

@@ -56,9 +56,9 @@ const cdn = {
 module.exports = {
   transpileDependencies: ["webpack-dev-server/client"],
   // 基本路径
-  publicPath: './',
+  publicPath: '',
   // 输出文件目录
-  outputDir: "dist",
+  outputDir: "lamp",
   assetsDir: "",
   // eslint-loader 是否在保存的时候检查
   lintOnSave: false,
@@ -123,15 +123,15 @@ module.exports = {
     if (IS_PROD) {
       const plugins = [];
       //开启 gzip 压缩
-      plugins.push(
-        new CompressionWebpackPlugin({
-          filename: "[path].gz[query]",
-          algorithm: "gzip",
-          test: productionGzipExtensions,
-          threshold: 10240,
-          minRatio: 0.8,
-        })
-      );
+      // plugins.push(
+      //   new CompressionWebpackPlugin({
+      //     filename: "[path].gz[query]",
+      //     algorithm: "gzip",
+      //     test: productionGzipExtensions,
+      //     threshold: 10240,
+      //     minRatio: 0.8,
+      //   })
+      // );
 
       config.plugins = [...config.plugins, ...plugins];
     }

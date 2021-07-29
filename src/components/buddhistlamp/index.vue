@@ -66,6 +66,7 @@ export default {
     async getCity(){
         let res = await this.$api.lamp.getCity()
         let d = res.result
+        this.value = d.city[0]
         this.columns = d.city
         this.cityList = d.list
     },
