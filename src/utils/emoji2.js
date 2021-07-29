@@ -1,0 +1,30 @@
+
+export const emojiMap1 = {
+    "[ Hai ]": require("../assets/img/im/emoji/01Hai.gif"),
+    "[ 对不起 ]": require("../assets/img/im/emoji/02对不起.gif"),
+    "[ 委屈 ]": require("../assets/img/im/emoji/03委屈.gif"),
+    "[ OK ]": require("../assets/img/im/emoji/04OK.gif"),
+    "[ 么么哒 ]": require("../assets/img/im/emoji/05么么哒.gif"),
+    "[ 大哭 ]": require("../assets/img/im/emoji/06大哭.gif"),
+    "[ 无语 ]": require("../assets/img/im/emoji/07无语.gif"),
+    "[ 哇哦 ]": require("../assets/img/im/emoji/08哇哦.gif"),
+    "[ 震惊 ]": require("../assets/img/im/emoji/09震惊.gif"),
+    "[ 好疲惫 ]": require("../assets/img/im/emoji/10好疲惫.gif"),
+    // "[扎心了]": 11,
+    // "[好的]": 12,
+    // "[关我屁事]": 13,
+    // "[机智如我]": 14,
+    // "[是么]": 15,
+}
+export const emojiName1 = [
+    "[ Hai ]",
+    "[ 对不起 ]",
+    "[ 委屈 ]",
+    "[ OK ]",
+    "[ 么么哒 ]",
+    "[ 大哭 ]",
+    "[ 无语 ]",
+    "[ 哇哦 ]",
+    "[ 震惊 ]",
+    "[ 好疲惫 ]",
+]

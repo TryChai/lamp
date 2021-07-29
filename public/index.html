@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="/es6-promise.min.js"></script>
+    <script src="/aliyun-oss-sdk-5.3.1.min.js"></script>
+    <script src="/aliyun-upload-sdk-1.5.0.min.js"></script>
+
+    <script
+      charset="utf-8"
+      src="https://map.qq.com/api/gljs?v=1.exp&key=QUEBZ-7FO3W-EBQRR-RRCFM-6DUC3-ZYBHX"
+    ></script>
+    <!-- <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=QUEBZ-7FO3W-EBQRR-RRCFM-6DUC3-ZYBHX"></script> -->
+    <script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+
+    <style media="screen" type="text/css">
+      .appLoading {
+        width: 80px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      .appLoading span {
+        display: inline-block;
+        width: 8px;
+        height: 100%;
+        border-radius: 4px;
+        background: lightgreen;
+        animation: load 1s ease infinite;
+      }
+      @keyframes load {
+        0%,
+        100% {
+          height: 40px;
+          background: lightgreen;
+        }
+        50% {
+          height: 70px;
+          margin: -15px 0;
+          background: lightblue;
+        }
+      }
+      .loading span:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .loading span:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      .loading span:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+      .loading span:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+    </style>
+    <title>加载中...</title>
+    <script
+      type="text/javascript"
+      src="//g.alicdn.com/mtb/lib-applink/0.3.8/??callApp.js,linksdk.js"
+    ></script>
+    <!-- 使用CDN加速的CSS文件，配置在vue.config.js下 -->
+    <% for (var i in
+    htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
+    <link
+      href="<%= htmlWebpackPlugin.options.cdn.css[i] %>"
+      rel="preload"
+      as="style"
+    />
+    <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet" />
+    <% } %>
+
+    <!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+    <% for (var i in
+    htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
+    <link
+      href="<%= htmlWebpackPlugin.options.cdn.js[i] %>"
+      rel="preload"
+      as="script"
+    />
+    <% } %>
+  </head>
+  <!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+  <% for (var i in
+  htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
+  <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+  <% } %>
+  <!-- built files will be auto injected -->
+  <script>
+    const isWx = function() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        //是微信
+        return true;
+      } else {
+        return false;
+      }
+    };
+  </script>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

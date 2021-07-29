@@ -1,0 +1,420 @@
+.pay_bg {
+  background-color: #f5f4f9;
+  min-height: 100vh;
+}
+.recharge_top {
+  width: 100%;
+  margin: 0 auto 10px 0;
+  background-color: white;
+}
+.recharge_top_content {
+  width: 85%;
+  margin: 0 auto;
+  height: 130px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.recharge_title {
+  font-size: 18px;
+  color: #000;
+  height: 50px;
+  line-height: 50px;
+}
+.recharge_top_content input {
+  width: 100%;
+  height: 65px;
+  font-size: 30px;
+  color: #000;
+  text-indent: 30px;
+  line-height: 65px;
+  padding-bottom: 16px;
+}
+.recharge_top_content span {
+  font-size: 36px;
+  position: absolute;
+  color: #000;
+  left: -10px;
+  top: 50px;
+}
+.recharge_account {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.recharge_account_content {
+  width: 85%;
+
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.recharge_account_sel {
+  width: 100%;
+}
+.recharge_account_cell {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.recharge_account_sel_logo {
+  height: 46px;
+  width: 46px;
+}
+.recharge_account_sel_logo img {
+  width: 100%;
+}
+.recharge_account_sel_logo_p {
+  width: 75%;
+}
+.recharge_account_sel_logo_p p:nth-of-type(1) {
+  font-size: 16px;
+  color: #000000;
+  line-height: 22px;
+}
+.recharge_account_sel_logo_p p:nth-of-type(2) {
+  font-size: 12px;
+  color: #8d8d8d;
+}
+.recharge_account_btn {
+  width: 85%;
+  margin: 10px auto 0 auto;
+}
+
+/*********************提现**********************/
+.draw {
+  width: 100%;
+}
+.draw_sel_account {
+  width: 100%;
+}
+.draw_sel_account .van-icon {
+  line-height: 1;
+}
+.draw_sel_account .van-cell-group__title {
+  width: 90%;
+  color: #b6b6b6;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.draw_sel_account_item {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.draw_sel_account_icon {
+  height: 46px;
+  width: 46px;
+}
+.draw_sel_account_icon img {
+  width: 100%;
+}
+.recharge_account_sel_logo_p {
+  margin-left: 0px;
+}
+.recharge_account_sel_logo_p1 {
+  margin-left: 10px;
+}
+.van-cell__left-icon,
+.van-cell__right-icon {
+  line-height: 50px;
+  font-size: 24px;
+  padding-right: 10px;
+}
+.draw_money {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+.draw_money > .recharge_top_content > .recharge_title {
+  font-size: 16px;
+}
+.draw_money > .recharge_top_content span {
+  position: absolute;
+  top: 50px;
+}
+.draw_money > .recharge_top_content > p:nth-of-type(2) {
+  font-size: 14px;
+  border-top: 1px solid #eeeeee;
+  width: 100%;
+  color: #686868;
+  line-height: 40px;
+}
+.draw_btn {
+  width: 85%;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.draw_btn .draw_btn_point {
+  font-size: 14px;
+  color: #ff9494;
+  border: 1px solid #ff9494;
+  padding: 5px 20px;
+}
+/*****************选择提现账户********************/
+.sel_draw_content {
+  margin-top: 15px;
+}
+.news_srcoll {
+  position: fixed;
+  top: 46px;
+}
+/*****************可提现收入********************/
+.income_bg {
+  background-color: #ffffff;
+  overflow: auto;
+}
+.income_top {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.income_box {
+  /* padding: 0 18px; */
+  margin: 0 8px;
+  height: 150px;
+  overflow: hidden;
+  background: url("./../../assets/img/pay/income.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.income_box_top {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.income_box_left,
+.income_box_right {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.income_box_left p,
+.income_box_right p {
+  color: #f5e1bc;
+  font-size: 14px;
+}
+.income_box_left span,
+.income_box_right span {
+  color: #ffffff;
+  font-size: 20px;
+}
+.income_box img {
+  width: 100%;
+}
+.income_box_bottom {
+  width: 90%;
+  margin: 0 auto;
+  height: 40%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.income_box_bottom_item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.income_box_bottom_item button {
+  font-size: 14px;
+  background-color: #c27f04;
+  border: 1px solid #d88c00;
+  color: #ffffff;
+  padding: 1px 15px;
+  border-radius: 5px;
+}
+.income_box_bottom_item button a {
+  color: #ffffff;
+}
+.income_record {
+  width: 100%;
+  margin-top: 20px;
+}
+.income_record .van-tabs__wrap {
+  overflow: inherit;
+}
+.income_record .van-tabs__line {
+  bottom: 0;
+}
+.income_record .van-tabs__nav {
+  padding-bottom: 0 !important;
+}
+.income_record .van-hairline--top-bottom::after {
+  border: none;
+}
+.income_record > p {
+  width: 90%;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.record_item {
+  /* width: 90%; */
+  border-bottom: 1px solid #f0f0f0;
+  /* padding: 15px 0 ; */
+  margin: 0 18px 15px 18px;
+}
+.record_item_top,
+.record_item_middle,
+.record_item_bottom {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.record_item_bottom i {
+  vertical-align: sub;
+}
+.record_item_bottom p span {
+  color: #000000;
+}
+.record_item_bottom .addMoney {
+  font-size: 18px;
+  color: red;
+}
+.record_item_bottom .delMoney {
+  font-size: 18px;
+  color: #008b1a;
+}
+.record_item_bottom .pay-black {
+}
+.record_item_top p:nth-of-type(1) {
+  /* width: 100px; */
+  background-color: #eefaff;
+  font-size: 14px;
+  color: #759ea5;
+  padding: 0 20px 0 0;
+  border-radius: 10px;
+}
+.record_item_top p:nth-of-type(2) {
+  color: #999999;
+  font-size: 14px;
+}
+.record_item_top_icon {
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #6aabbd;
+  font-size: 16px;
+  padding: 4px;
+  margin-right: 16px;
+}
+.record_item_middle p:nth-of-type(1) {
+  width: 50%;
+  color: #999999;
+  font-size: 14px;
+  text-overflow: ellipsis; /*表示文本超出用省略号代替*/
+  white-space: nowrap; /*表示文本不换行；*/
+  overflow: hidden; /*表示超出隐藏；*/
+}
+.record_item_middle p:nth-of-type(1) span {
+  color: #333333;
+  font-size: 14px;
+}
+.record_item_middle p:nth-of-type(2) {
+  color: #1a1a1a;
+  font-size: 18px;
+}
+.record_item_middle p:nth-of-type(2) span:nth-of-type(1) {
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.record_item_middle p:nth-of-type(2) span:nth-of-type(2) {
+  font-family: "PingFangSC-Regular";
+  font-size: 20px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.record_item_bottom p {
+  font-size: 14px;
+  color: #999999;
+  line-height: 2;
+}
+
+.income_record .van-tab--active {
+  color: #323233;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/******************充值记录*********************/
+.note_item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  /* height: 80px; */
+}
+.note_item_top,
+.note_item_bottom {
+  width: 90%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.note_item_top p:nth-of-type(1) {
+  font-size: 14px;
+  color: #999999;
+}
+.note_item_top p:nth-of-type(1) span {
+  font-size: 14px;
+  color: #333333;
+}
+.note_item_top p:nth-of-type(2) {
+  font-size: 14px;
+  color: #999999;
+}
+.note_item_bottom p:nth-of-type(1) {
+  font-size: 14px;
+  color: #999999;
+}
+.note_item_bottom p:nth-of-type(1) span {
+  font-size: 14px;
+  color: #333333;
+}
+.note_item_bottom p:nth-of-type(2) {
+  font-size: 14px;
+  color: #999999;
+}
+.note_item_bottom p:nth-of-type(2) span {
+  font-size: 14px;
+  color: #1989fa;
+}
+.model {
+  width: 100%;
+  border-radius: 0;
+}

@@ -1,0 +1,45 @@
+
+.game_box{
+    padding:10px 16px !important;
+    
+}
+.game_box div{
+    justify-content: flex-start !important;
+}
+.avatr_ga{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.avatr_ga+p{
+    font-size: 14px;
+    color: #767677;
+    padding-left: 5px;
+}
+.game_upseacon{
+    font-size: 16px;
+    color: #701618;
+    text-align: center;
+    padding-top: 20px;
+}
+.game_upseacon span{
+    color: #ff5128;
+    
+}
+.game_rowseacon{
+    color: #630506;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+}
+.game_balance{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff3e7 !important;
+    font-size: 23px;
+    color: #ff5128;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+}
